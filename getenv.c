@@ -1,17 +1,10 @@
 #include "shell.h"
 
 /**
-<<<<<<< HEAD
- * get_environ - Returns String Array copy of environ
- * @info: structure containing potential arguments. Used to maintain
+ * get_environ - Return String array copy of our environ
+ * @info: structure containing  arguments. Used to maintain
  *          constant function prototype.
  * Return: 0 Always
-=======
- * get_environ - It returns the string array copy of our environ
- * @info: Structure containing potential arguments and is used to maintain
- *          constant function prototype.
- * Return: Always 0
->>>>>>> 00dae49e4fe737929047d9135ef8693ef36599a4
  */
 char **get_environ(info_t *info)
 {
@@ -25,19 +18,11 @@ char **get_environ(info_t *info)
 }
 
 /**
-<<<<<<< HEAD
- * _unsetenv - Remove environment variable
- * @info: structure containing arguments. Used to maintain
+ * _unsetenv - terminate environment variable
+ * @info: Structure containing arguments. Used to maintain
  *        constant function prototype.
- *  Return: 1 on delete, otherwise 0.
- * @var: String env var Property
-=======
- * _unsetenv - Removes an environment variable
- * @info: Structure containing potential arguments. Used to maintain
- *        constant functions prototype.
- *  Return: 1 on delete, 0 otherwise
- * @var: the string env var property
->>>>>>> 00dae49e4fe737929047d9135ef8693ef36599a4
+ *  Return: Delete 1, Otherwise0
+ * @var String env var property
  */
 int _unsetenv(info_t *info, char *var)
 {
@@ -65,23 +50,13 @@ int _unsetenv(info_t *info, char *var)
 }
 
 /**
-<<<<<<< HEAD
- * _setenv - Initialize a new environment variable,
+ * _setenv - Initiate new environment variable,
  *             or modify an existing one
- * @info: Structure containing potential arguments. Used to maintain
+ * @info: structure containing  arguments. Used to maintain
  *        constant function prototype.
- * @var: The String env var Property
- * @value: The String env var Value
- *  Return: 0. Always
-=======
- * _setenv - Initializes a new environment variable,
- *             or modifies an existing one
- * @info: Structures containing potential arguments. Used to maintain
- *        constant function prototype.
- * @var: the string env var property
- * @value: the string env var value
- *  Return: Always 0
->>>>>>> 00dae49e4fe737929047d9135ef8693ef36599a4
+ * @var: String env var property
+ * @value: String env var value
+ *  Return: 0 Always
  */
 int _setenv(info_t *info, char *var, char *value)
 {
@@ -116,7 +91,3 @@ int _setenv(info_t *info, char *var, char *value)
 	info->env_changed = 1;
 	return (0);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 00dae49e4fe737929047d9135ef8693ef36599a4
